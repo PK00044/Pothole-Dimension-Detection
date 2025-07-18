@@ -1,0 +1,182 @@
+[
+    {
+        "timestamp": "2025-05-22 14:26:57",
+        "file_type": "image",
+        "potholes_detected": 4
+    },
+    {
+        "timestamp": "2025-05-22 14:27:06",
+        "file_type": "image",
+        "potholes_detected": 7
+    },
+    {
+        "timestamp": "2025-05-22 14:27:12",
+        "file_type": "image",
+        "potholes_detected": 9
+    },
+    {
+        "timestamp": "2025-05-22 14:27:20",
+        "file_type": "image",
+        "potholes_detected": 4
+    },
+    {
+        "timestamp": "2025-05-23 19:31:09",
+        "file_type": "image",
+        "potholes_detected": 17
+    },
+    {
+        "timestamp": "2025-05-23 19:56:27",
+        "file_type": "image",
+        "potholes_detected": 1
+    },
+    {
+        "timestamp": "2025-05-23 19:57:47",
+        "file_type": "image",
+        "potholes_detected": 7
+    },
+    {
+        "timestamp": "2025-05-23 20:01:47",
+        "file_type": "image",
+        "potholes_detected": 7
+    },
+    {
+        "timestamp": "2025-05-23 20:17:36",
+        "file_type": "image",
+        "potholes_detected": 7
+    },
+    {
+        "timestamp": "2025-05-23 20:19:14",
+        "file_type": "video",
+        "potholes_detected": 2955
+    },
+    {
+        "timestamp": "2025-05-23 20:20:33",
+        "file_type": "video",
+        "potholes_detected": 2955
+    },
+    {
+        "timestamp": "2025-05-25 12:34:15",
+        "file_type": "image",
+        "potholes_detected": 7
+    },
+    {
+        "timestamp": "2025-05-25 12:34:44",
+        "file_type": "image",
+        "potholes_detected": 4
+    },
+    {
+        "timestamp": "2025-05-25 12:35:11",
+        "file_type": "video",
+        "potholes_detected": 2955
+    },
+    {
+        "timestamp": "2025-05-25 12:36:43",
+        "file_type": "image",
+        "potholes_detected": 1
+    },
+    {
+        "timestamp": "2025-05-25 12:37:04",
+        "file_type": "image",
+        "potholes_detected": 13
+    },
+    {
+        "timestamp": "2025-05-25 12:47:16",
+        "file_type": "image",
+        "potholes_detected": 9
+    },
+    {
+        "timestamp": "2025-05-25 12:47:43",
+        "file_type": "image",
+        "potholes_detected": 3
+    },
+    {
+        "timestamp": "2025-05-25 12:50:26",
+        "file_type": "video",
+        "potholes_detected": 1967
+    },
+    {
+        "timestamp": "2025-05-25 12:54:44",
+        "file_type": "video",
+        "potholes_detected": 1967
+    },
+    {
+        "timestamp": "2025-05-25 15:49:37",
+        "file_type": "image",
+        "potholes_detected": 17
+    },
+    {
+        "timestamp": "2025-05-25 15:50:04",
+        "file_type": "image",
+        "potholes_detected": 2
+    },
+    {
+        "timestamp": "2025-05-25 15:50:50",
+        "file_type": "image",
+        "potholes_detected": 3
+    },
+    {
+        "timestamp": "2025-05-25 15:52:23",
+        "file_type": "image",
+        "potholes_detected": 0
+    },
+    {
+        "timestamp": "2025-05-25 18:08:24",
+        "file_type": "image",
+        "potholes_detected": 9
+    },
+    {
+        "timestamp": "2025-05-25 18:39:08",
+        "file_type": "video",
+        "potholes_detected": 2955
+    },
+    {
+        "timestamp": "2025-05-26 06:26:20",
+        "file_type": "image",
+        "potholes_detected": 2
+    },
+    {
+        "timestamp": "2025-05-26 06:29:33",
+        "file_type": "image",
+        "potholes_detected": 18
+    },
+    {
+        "timestamp": "2025-05-29 00:55:49",
+        "file_type": "image",
+        "potholes_detected": 4
+    },
+    {
+        "timestamp": "2025-05-29 00:56:17",
+        "file_type": "image",
+        "potholes_detected": 17
+    },
+    {
+        "timestamp": "2025-05-29 00:56:38",
+        "file_type": "video",
+        "potholes_detected": 2955
+    },
+    {
+        "timestamp": "2025-05-29 13:51:47",
+        "file_type": "image",
+        "potholes_detected": 7
+    },
+    {
+        "timestamp": "2025-05-29 13:52:33",
+        "file_type": "image",
+        "potholes_detected": 7
+    },
+    {
+        "timestamp": "2025-06-08 00:04:37",
+        "file_type": "image",
+        "potholes_detected": 0
+    },
+    {
+        "timestamp": "2025-06-08 00:05:01",
+        "file_type": "image",
+        "potholes_detected": 0
+    },
+    {
+        "timestamp": "2025-06-08 00:05:15",
+        "file_type": "image",
+        "potholes_detected": 7
+    }
+]

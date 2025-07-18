@@ -1,0 +1,63 @@
+import streamlit as st
+import requests
+from PIL import Image
+import base64
+import io
+import os
+
+st.set_page_config(page_title="Pothole Detection System", layout="centered", page_icon="🕳️")
+
+st.title("🕳️ Pothole Detection System")
+st.write("Upload an image or video to detect potholes with dimension estimation.")
+
+uploaded_file = st.file_uploader("Choose an image or video", type=["jpg", "jpeg", "png", "mp4", "mpeg4"])
+
+if uploaded_file:
+    # Preview before detection
+    if uploaded_file.type.startswith("image"):
+        st.image(uploaded_file, caption="Uploaded Image", use_column_width=True)
+    else:
+        st.video(uploaded_file)
+
+    # Upload to FastAPI
+    files = {
+        "file": (uploaded_file.name, uploaded_file.getvalue(), uploaded_file.type)
+    }
+
+    with st.spinner("Detecting potholes..."):
+        try:
+            response = requests.post("http://127.0.0.1:8000/detect", files=files)
+
+            if response.status_code == 200:
+                if uploaded_file.type.startswith("image"):
+                    result = response.json()
+                    if "processed_image" in result:
+                        image_bytes = base64.b64decode(result["processed_image"])
+                        image = Image.open(io.BytesIO(image_bytes))
+                        st.image(image, caption="Detected Image", use_column_width=True)
+                        st.success("Detection complete!")
+                    else:
+                        st.error("No processed image returned.")
+                else:
+                    output_path = "output.mp4"
+                    with open(output_path, "wb") as f:
+                        f.write(response.content)
+                        f.flush()
+                        os.fsync(f.fileno())
+
+                    st.success("Detection complete! ✅")
+                    st.video(output_path)
+
+                    with open(output_path, "rb") as f:
+                        st.download_button(
+                            label="📥 Download Processed Video",
+                            data=f,
+                            file_name="detected_potholes.mp4",
+                            mime="video/mp4"
+                        )
+
+            else:
+                st.error(f"Detection failed: {response.text}")
+
+        except Exception as e:
+            st.error(f"Request failed: {e}")
